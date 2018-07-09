@@ -150,7 +150,16 @@ function compare(a, b, c, compareFunction)
 
 document.write(compare(2, 3, 4, more) + "<br>");
 
+var button = document.getElementById("my-button");
+var paragraph = document.getElementById("my-content");
 
+button.onclick = function(event) {
+  //see what's inside this event parameter
+  console.log(event);
+  
+  //output a random number to the screen
+  paragraph.innerHTML = Math.random() * 5;
+};
 
 
 
