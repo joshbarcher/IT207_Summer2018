@@ -1,5 +1,5 @@
 //#1: conditional logic
-/*var hungry = confirm("Hungry?");
+var hungry = confirm("Hungry?");
 if (hungry)
 {
   document.write("You are hungry");
@@ -24,10 +24,10 @@ else if (rainy)
 else
 {
   //do something...
-}*/
+}
   
 //#3: nested if statements
-/*var red = parseInt(prompt("Red?"));
+var red = parseInt(prompt("Red?"));
 var green = parseInt(prompt("Green?"));
 var blue = parseInt(prompt("Blue?"));
 
@@ -42,10 +42,10 @@ if (red === 0)
       document.write("The color is white");
     }
   }
-}*/
+}
   
 //#4: curly braces are optional (be careful...)
-/*if (confirm("Are you over 5ft tall?"))
+if (confirm("Are you over 5ft tall?"))
   document.write("well look at you!");
   document.write("You are tall (subjectively)");
 
@@ -57,7 +57,7 @@ else if (favNumber < 0)
 else
   //do something...
   
-if (favNumber > 1000000) document.write("That number is big!");*/
+if (favNumber > 1000000) document.write("That number is big!");
 
 //#5: switch statements
 
@@ -109,10 +109,3 @@ var favoriteMovie = "Seven";
 var message = (confirm("Did you like " + favoriteMovie)) ? 
               "I do too!" : "Really???";
 alert(message);
-
-  
-  
-  
-  
-  
-  
