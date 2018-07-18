@@ -92,7 +92,7 @@ for (var i = 0; i < parts.length; i++)
   document.write(num + "<br>");
 }
 
-var part = phoneNumber.substr(0, 3);
+var part = phoneNumber.substring(0, 3);
 console.log(part);
 
 part = phoneNumber.substring(3);

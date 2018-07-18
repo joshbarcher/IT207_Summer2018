@@ -16,7 +16,8 @@ function find(source, search)
     {
       count++;
       
-      //change the string to the rest of the string
+      //change the string to store everything
+      //after the search value found
       var nextIndex = foundIndex + search.length;
       source = source.substring(nextIndex);
     }
