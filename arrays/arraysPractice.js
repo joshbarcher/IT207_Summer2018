@@ -140,12 +140,17 @@ var every = check.every(function(value, index, array) {
 
 console.log("Every: " + every);
 
+//true if at least one element returns true with the given function
 var some = check.some(function(value, index, array) {
   return value === 3;
 });
 
 console.log("Some: " + some);
 
+//misc
+//**********************************************
+
+//storing functions in arrays
 var foo = 10;
 var functions = [addOne, addTwo, addThree];
 for (var i = 0; i < functions.length; i++)
@@ -169,3 +174,7 @@ function addThree(value)
 {
   return value + 3;
 }
+
+//avoid polluting the global namespace by storing temporary
+//variables in functions and invoking them anonymously
+(function() { alert("Do something..."); })();
