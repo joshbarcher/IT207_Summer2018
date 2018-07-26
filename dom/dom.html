@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>Practicing with the DOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" href="dom.css">
+  </head>
+    
+  <body>
+    <!-- this is my totally awesome page -->
+    <h1 id="page-header">Lorem Ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+    sit amet sollicitudin libero. Cras id nibh nec magna efficitur aliquet quis non eros.
+    Aenean quis tortor scelerisque, malesuada risus ut, blandit nisi. Aenean rhoncus
+    massa nec tristique egestas. <span class="quote">Donec eget ante varius, sollicitudin
+    elit a, pharetra lectus.</span> Quisque nunc lacus, efficitur eu dolor sit amet, blandit
+    tristique mauris. Nam sapien enim, viverra vitae nisi nec, pretium lacinia ante. Aliquam
+    porta tortor vitae gravida suscipit. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+    sit amet sollicitudin libero. <span class="quote">Cras id nibh nec magna efficitur
+    aliquet quis non eros. </span>Aenean quis tortor scelerisque, malesuada risus ut,
+    blandit nisi. Aenean rhoncus massa nec tristique egestas.</p>
+    <hr>
+
+    <aside>
+      <h4 id="figures">Favorite Historical Figures</h4>
+      <ol class="list">
+        <li class="every">Abraham Lincoln</li>
+        <li class="other">Martin Luther King</li>
+        <li class="every">William Wallace</li>
+        <li class="other">Winston Churchill</li>
+        <li class="every">Thomas Jefferson</li>
+        <li class="other">Nelson Mandella</li>
+      </ol>
+    </aside>
+
+    <hr>
+    <button>Add records!</button><br>
+    <table id="contact_table">
+      <thead>
+        <tr>
+          <td>Contact Name</td><td>Email</td><td>Phone #</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Juan Mencia</td><td>e@e.com</td><td>999-888-7777</td></tr>
+        <tr><td>Albert Williams</td><td>d@d.com</td><td>555-444-6666</td></tr>
+        <tr><td>Cynthia Adams</td><td>f@f.com</td><td>111-222-3333</td></tr>
+      </tbody>
+    </table>
+    
+    <script src="dom.js?v=14"></script>
+  </body>
+</html>
