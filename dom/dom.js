@@ -133,6 +133,44 @@ function addingElementsToTheDOM()
   }
 }
        
+//adding table records example
+//***************************************************************
+
+document.getElementsByTagName("button")[0].onclick = addRecord;
+
+function addRecord()
+{
+  var table = document.getElementById("contact-table");
+  var body = table.lastElementChild;
+
+  //retrieve user data
+  var name = prompt("Please enter your name!");
+  var email = prompt("Please enter your email!");
+  var phoneNumber = prompt("Please enter your phone number!");
+
+  //create a new row
+  var row = document.createElement("tr");
+
+  //create new cells
+  var cell1 = getTableCell(name);
+  var cell2 = getTableCell(email);
+  var cell3 = getTableCell(phoneNumber);
+
+  //assemble!
+  row.appendChild(cell1);
+  row.appendChild(cell2);
+  row.appendChild(cell3);
+
+  body.appendChild(row);
+}
+
+function getTableCell(text)
+{
+  var cell = document.createElement("td");
+  cell.textContent = text;
+
+  return cell;
+}
        
        
        
