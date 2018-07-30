@@ -21,8 +21,8 @@ function selectingMultipleElements()
   var everyElements = document.getElementsByClassName("every");
   var otherElements = document.getElementsByClassName("other");
   
-  var everyColor = "rgba(0,135,255,1)";
-  var otherColor = "rgba(255,13,0,1)";
+  var everyColor = "rgba(0,135,255,0.2)";
+  var otherColor = "rgba(255,13,0,0.2)";
   
   for (var i = 0; i < everyElements.length; i++)
   {
@@ -89,14 +89,59 @@ function traversingTheDom()
   }
   
   //how to identify child elements
+  var table = document.getElementById("contact-table");
+  
+  //table --> thead --> tr
+  var headerRow = table.firstElementChild.firstElementChild; 
+  var children = headerRow.children;
+  
+  for (var i = 0; i < children.length; i++)
+  {
+    children[i].style.textDecoration = "underline";
+  }
+}
+     
+//#4: adding elements to the DOM
+//***************************************************  
+
+addingElementsToTheDOM();
+
+function addingElementsToTheDOM()
+{
+  //select the body to add new elements
+  var body = document.getElementsByTagName("body")[0];
+  
+  //formally register a new element with the DOM
+  var hr = document.createElement("hr");
+  
+  //add the element as a child of another element
+  body.appendChild(hr);
+  
+  //add several links to the end of our list items
+  var items = document.getElementsByTagName("li");
+  for (var i = 0; i < items.length; i++)
+  {
+    var link = document.createElement("a");
+    var space = document.createTextNode(" "); 
+    
+    //assign attributes for a link to google
+    link.href = "http://www.google.com";
+    link.innerHTML = "Google it!";
+    
+    items[i].appendChild(space);
+    items[i].appendChild(link);
+  }
 }
        
        
        
        
-       
-       
-       
+  
+
+
+
+
+
        
        
        
