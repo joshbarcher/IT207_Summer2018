@@ -26,9 +26,14 @@ window.onload = function() {
 
 function getRadioValue(name)
 {
-  var radios = document.querySelector('input[name="' + name + '"]:checked');
-  return radios.value;
-  /*var value = "";
+  //short way (awesome!)
+  var radio = document.querySelector('input[name="' + name + '"]:checked');
+  return radio.value;
+  
+  //long way
+  /*
+  var radios = document.querySelectorAll('input[name="' + name + '"]');
+  var value = "";
   for (var i = 0; i < radios.length; i++)
   {
     if (radios[i].checked)
