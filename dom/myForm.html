@@ -10,26 +10,26 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-    
+    <script src="formHandling.js?v=9"></script>
   </head>
   <body>
     <h1>User Questionaire</h1>
     <form action="#">
       <p>
         <label>Full Name: </label>
-        <input type="text" placeholder="Susan Smith">
+        <input type="text" placeholder="Susan Smith" name="full-name">
       </p>
       <p>
         <label>Years of college completed: </label>
-        <input type="number">
+        <input type="number" name="college-completed">
       </p>
       <p>
         <label>Birthdate: </label>
-        <input type="date">
+        <input type="date" name="b-day">
       </p>
       <p>
         <label>State/region: </label>
-        <select>
+        <select name="state">
           <option>WA</option>
           <option>OR</option>
           <option>NV</option>
@@ -38,15 +38,19 @@
       </p>
       <p>
         <label>Gender: </label>
-        <input type="radio" name="gender" checked> Male
-        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender" value="Male" checked> Male
+        <input type="radio" name="gender" value="Female"> Female
       </p>
       <p>
         <label>Misc: </label><br>
-        <input type="checkbox" name="subscriber"> Are you a subscriber?<br>
-        <input type="checkbox" name="firstTime"> First time on our site?<br>
-        <input type="checkbox" name="enjoy"> Did you enjoy this page?<br>
+        <input type="checkbox" name="subscriber" value="Are you a subscriber" 
+               checked> Are you a subscriber?<br>
+        <input type="checkbox" name="firstTime" value="First timer?"
+               checked> First time on our site?<br>
+        <input type="checkbox" name="enjoy" value="Did you enjoy the visit?"
+               > Did you enjoy this page?<br>
       </p>
+      <button>Submit values!</button>
     </form>
   </body>
 </html>
