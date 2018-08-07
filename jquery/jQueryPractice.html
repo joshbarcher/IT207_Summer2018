@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>Practicing with jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="jQueryPractice.js?v=2"></script>
+  </head>
+
+  <body>
+    <h1 id="page_header">Lorem Ipsum</h1>
+
+    <div id="paragraphs">
+      <p class="interesting">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+      sit amet sollicitudin libero. Cras id nibh nec magna efficitur aliquet quis non eros.
+      Aenean quis tortor scelerisque, malesuada risus ut, blandit nisi. Aenean rhoncus
+      massa nec tristique egestas. <span class="quote">Donec eget ante varius, sollicitudin
+      elit a, pharetra lectus.</span> Quisque nunc lacus, efficitur eu dolor sit amet, blandit
+      tristique mauris. Nam sapien enim, viverra vitae nisi nec, pretium lacinia ante. Aliquam
+      porta tortor vitae gravida suscipit. </p>
+
+      <p class="interesting">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+      sit amet sollicitudin libero. <span class="quote">Cras id nibh nec magna efficitur
+      aliquet quis non eros. </span>Aenean quis tortor scelerisque, malesuada risus ut,
+      blandit nisi. Aenean rhoncus massa nec tristique egestas.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+      sit amet sollicitudin libero. <span class="quote">Cras id nibh nec magna efficitur
+      aliquet quis non eros. </span>Aenean quis tortor scelerisque, malesuada risus ut,
+      blandit nisi. Aenean rhoncus massa nec tristique egestas.</p>
+    </div>
+    <button id="slide-up">Slide up!</button><button id="slide-down">Slide down!</button>
+    <hr>
+
+    <aside>
+      <h4 id="figures">Favorite Historical Figures</h4>
+      <ol class="list">
+        <li class="every">Abraham Lincoln</li>
+        <li class="other">Martin Luther King</li>
+        <li class="every">William Wallace</li>
+        <li class="other">Winston Churchill</li>
+        <li class="every">Thomas Jefferson</li>
+        <li class="other">Nelson Mandella</li>
+      </ol>
+      <button id="remove-list">Remove elements</button>
+    </aside>
+
+    <hr>
+    <button id="toggle-button">Hide</button><br>
+    <table id="contact-table">
+      <thead>
+        <tr><td>Contact Name</td><td>Email</td><td>Phone #</td></tr>
+      </thead>
+      <tbody>
+        <tr><td>Juan Mencia</td><td>e@e.com</td><td>999-888-7777</td></tr>
+        <tr><td>Albert Williams</td><td>d@d.com</td><td>555-444-6666</td></tr>
+        <tr><td>Cynthia Adams</td><td>f@f.com</td><td>111-222-3333</td></tr>
+      </tbody>
+    </table>
+  </body>
+</html>
