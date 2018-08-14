@@ -1,0 +1,28 @@
+img {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+button {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* jQuery UI is not picking up striping styles, so I'm adding them here... */
+#food-table {
+  border-collapse: collapse;
+}
+
+#food-table td {
+  border: 2px solid rgb(200, 200, 200);
+}
+
+#food-table .odd {
+  background-color: rgb(240, 240, 240);
+}
+
+#food-table .even {
+  background-color: rgb(255, 255, 255);
+}
