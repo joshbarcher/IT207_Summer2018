@@ -1,0 +1,12 @@
+{
+  "title": "science club",
+  "meeting times": {
+    "monday": true,
+    "tuesday": true,
+    "wednesday": false,
+    "thursday": true,
+    "friday": false
+  },
+  "years old": 3,
+  "members": ["Jose", "Jeremy", "Susanne", "Winston"]
+}
