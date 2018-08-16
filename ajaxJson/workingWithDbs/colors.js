@@ -19,21 +19,48 @@ function addNewColor(event)
     green: $('input[name="green"]').val(),
     blue: $('input[name="blue"]').val()
   };
-  console.log(color);
   
   //update our UI
   $("#colorsTable tbody").append(getTableRow(color));
+  $("input").val("");
  
   //send the data to the server
+  addNewColorToDb(color);
+}
+
+function addNewColorToDb(color)
+{
+  var options = {
+    type: "get",
+    url: "ajax.php",
+    cache: false,
+    data: {
+      command: "insert",
+      red: color.red,
+      green: color.green,
+      blue: color.blue,
+      name: color.name
+    },
+    success: function(data) {
+      //we're good, success!
+    },
+    error: function(response, status, error) {
+      alert("Error: " + error);
+    }
+  };
+  
+  $.ajax(options);
 }
 
 function loadAllColorsOnStart()
 {
   var options = {
     type: "get",
-    url: "ajax.php", //we'll write this shortly...
+    url: "ajax.php",
     cache: false,
-    data: {},
+    data: {
+      command: "retrieve"
+    },
     success: function(data) {
       buildInitialTable(JSON.parse(data));
     },
